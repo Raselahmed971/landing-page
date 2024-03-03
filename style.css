@@ -197,7 +197,16 @@ h2{
     cursor: pointer;
 }
 
+.small-container .row{
+    display: flex;
+    /* background: red; */
 
+}
+.small-container .row .col-6{
+    flex-basis: 30%;
+    justify-content: space-around;
+
+}
 
 
 
