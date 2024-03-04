@@ -20,25 +20,29 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo.png" width="125px" alt="">
+                    <img src="images/logo.png" width="125px" alt="" onclick="menu-icon">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="menuItems">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Proudct</a></li>
+                        <li><a href="#">Product</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Account</a></li>
                     </ul>
                 </nav>
                 <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="toggleMenu()" alt="">
+                
+                
             </div>
     
             <div class="row">
                 <div class="col-2">
                     <h1>Give your workout<br>A new style!</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
-                    <a href="#" class="btn">Buy now &#8594;</a>
+                    <button href="#" class="btn">Buy now &#8594;</button
+                        >
                 </div>
                 <div class="col-2">
                     <img src="images/image1.png" alt="">
@@ -284,7 +288,7 @@
                     </div>
                     <img src="images/user-2.png" alt="">
                     <h2>Sri one cu</h2>
-
+                    
                 </div>
             </div>
         </div>
@@ -318,20 +322,23 @@
     <div class="small-container">
         <div class="row">
             <div class="col-6">
-                <h3>Download our app</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sapiente provident, voluptates officiis a quasi nesciunt magnam repellendus maiores accusantium enim iusto quisquam obcaecati, reprehenderit tenetur. Recusandae impedit dolore necessitatibus?</p>
+                <h4>Download our app</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sapiente provident</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
             </div>
             <div class="col-6">
                 <img src="images/logo-white.png" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium illum ad repellat voluptatibus ratione maxime, ea quod nostrum ab omnis nemo. Dicta, commodi maiores. Amet esse dicta sit cupiditate similique!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium illum.</p>
             </div>
             <div class="col-6">
                 <h3>Usefull links</h3>
                 <ul>
                     <li>Coupon</li>
-                    <li>Coupon</li>
-                    <li>Coupon</li>
-                    <li>Coupon</li>
+                    <li>My account</li>
+
                 </ul>
             </div>
         </div>
@@ -339,6 +346,18 @@
 </footer>
 
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        function toggleMenu() {
+            if (menuItems.style.display === "none") {
+                menuItems.style.display = "block";
+            } else {
+                menuItems.style.display = "none";
+            }
+        }
+    </script>
+    
+    
 </body>
 </html>
