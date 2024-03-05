@@ -282,8 +282,35 @@ footer .col-6 img{
         flex-basis: 100%;
     
     }
+    .small-container .row .col-3 {
+        flex-basis: 80%;
+        /* min-width: 226px; */
+        margin-bottom: 30px;
+        min-width: 300px;
+    }
+    .small-container .row .col-4 {
+        flex-basis: 80%;
+        /* min-width: 226px; */
+        margin-bottom: 30px;
+        min-width: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+    }
+    .rating {
+        position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .col-2 h1 {
+        font-size: 30px;
+        line-height: 35px;
+        margin: 25px 0;
+    }
 }
-
 
 
 
